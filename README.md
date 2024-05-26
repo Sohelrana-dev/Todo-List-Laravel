@@ -1,4 +1,4 @@
-## Laravel Multi Auth using Laravel Breeze
+##Laravel Simple To-do List Application
 
 I can provide you with a guide on how to install a Laravel project from a Git repository. Please follow the instructions below:
 
