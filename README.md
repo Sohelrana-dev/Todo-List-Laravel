@@ -11,7 +11,7 @@ I can provide you with a guide on how to install a Laravel project from a Git re
 2. Install Composer:
    If you don't have composer installed in your system then install composer from here: [https://getcomposer.org](https://getcomposer.org/)
 
-7. Create a copy of the .env file:
+7. Open the repoitory code editor andreate a copy of the .env file:
    ```
    cp .env.example .env
    ```
