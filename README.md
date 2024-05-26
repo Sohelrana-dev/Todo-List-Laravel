@@ -1,6 +1,6 @@
 ## Laravel Simple To-do List Application
 
-# Technologies Version
+##Technologies Version
 <p>Laravel - 10.48.11</p>
 <p>PHP - 8.3.4</p>
 
