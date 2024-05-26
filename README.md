@@ -11,45 +11,65 @@ I can provide you with a guide on how to install a Laravel project from a Git re
 2. Install Composer:
    If you don't have composer installed in your system then install composer from here: [https://getcomposer.org](https://getcomposer.org/)
 
-3. Go to the project directory:
+7. Create a copy of the .env file:
+   ```
+   cp .env.example .env
+   ```
+   This will create a new file named `.env` based on the example file.    
+   
+4. Go to .env file and past this :
+   ```
+   DB_CONNECTION=sqlite
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=C:\Users\SC\OneDrive\Desktop\Todo-List-Laravel-master\database\database.sqlite
+   DB_USERNAME=null
+   DB_PASSWORD=null
+   ```
+
+4. Go to .env file and change "DB_DATABASE" folder path on your device up to third bracket:
+   ```
+   DB_CONNECTION=sqlite
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=[C:\Users\SC\OneDrive\Desktop\Todo-List-Laravel-master\]database\database.sqlite
+   DB_USERNAME=null
+   DB_PASSWORD=null
+   ```   
+
+5. Go to the project directory:
    ```
    cd repository
    ```
    Now you should see the files and folders of your Laravel project in the terminal.
 
-4. Install dependencies:
+6. Install dependencies:
    ```
    composer install or composer update
    ```
 
-5. Create a copy of the .env file:
-   ```
-   cp .env.example .env
-   ```
-   This will create a new file named `.env` based on the example file. 
-
-6. Generate an application key:
+8. Generate an application key:
    ```
    php artisan key:generate
    ```
 
-7. Install Node.js dependencies:
+9. Install Node.js dependencies:
    ```
    npm install
    ```
    This will install all the necessary Node.js libraries, including Tailwind CSS.
 
-8. Compile assets:
+10. Compile assets:
    ```
    npm run dev
    ```
-9. Run migrations:
+11. Run migrations:
    ```
    php artisan migrate
    ```
    This step may fail due to permission issues. If this is the case, you can run `php artisan migrate --pretend` to see the SQL statements that would be executed and manually execute them in your database client.
 
-10. Start the server:
+11. Start the server:
    ```
    php artisan serve
    ```
