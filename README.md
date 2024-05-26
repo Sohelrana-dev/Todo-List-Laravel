@@ -75,10 +75,11 @@ I can provide you with a guide on how to install a Laravel project from a Git re
    ```
    This will start the development server at http://localhost:8000.
 
+13. Than click the register button and complete registration:
+   Enjoy To-do Application.   
+
 That's it! You have successfully installed a Laravel project from a Git repository. Let me know if you need any further assistance.
 
-13. Than click the register button and complete registration:
-   Enjoy To-do Application.
 
 ## Contributing
 
