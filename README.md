@@ -1,11 +1,10 @@
 ##Laravel Simple To-do List Application
 
-I can provide you with a guide on how to install a Laravel project from a Git repository. Please follow the instructions below:
-
 ## Technologies Version
-
 <p>Laravel - 10.48.11</p>
 <p>PHP - 8.3.4</p>
+
+I can provide you with a guide on how to install a Laravel project from a Git repository. Please follow the instructions below:
 
 1. Clone the repository:
    ```
