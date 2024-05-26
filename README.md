@@ -11,7 +11,7 @@ I can provide you with a guide on how to install a Laravel project from a Git re
 2. Install Composer:
    If you don't have composer installed in your system then install composer from here: [https://getcomposer.org](https://getcomposer.org/)
 
-7. Open the repository code editor andreate a copy of the .env file:
+3. Open the repository code editor andreate a copy of the .env file:
    ```
    cp .env.example .env
    ```
@@ -27,7 +27,7 @@ I can provide you with a guide on how to install a Laravel project from a Git re
    DB_PASSWORD=null
    ```
 
-4. Go to .env file and change "DB_DATABASE" folder path on your device up to third bracket:
+5. Go to .env file and change "DB_DATABASE" folder path on your device up to third bracket:
    ```
    DB_CONNECTION=sqlite
    DB_HOST=127.0.0.1
@@ -37,13 +37,13 @@ I can provide you with a guide on how to install a Laravel project from a Git re
    DB_PASSWORD=null
    ```   
 
-5. Go to the project directory:
+6. Go to the project directory:
    ```
    cd repository
    ```
    Now you should see the files and folders of your Laravel project in the terminal.
 
-6. Install dependencies:
+7. Install dependencies:
    ```
    composer install or composer update
    ```
@@ -61,7 +61,7 @@ I can provide you with a guide on how to install a Laravel project from a Git re
 
 10. Compile assets:
    ```
-   npm run dev
+   npm run build
    ```
 11. Run migrations:
    ```
@@ -69,13 +69,16 @@ I can provide you with a guide on how to install a Laravel project from a Git re
    ```
    This step may fail due to permission issues. If this is the case, you can run `php artisan migrate --pretend` to see the SQL statements that would be executed and manually execute them in your database client.
 
-11. Start the server:
+12. Start the server:
    ```
    php artisan serve
    ```
    This will start the development server at http://localhost:8000.
 
 That's it! You have successfully installed a Laravel project from a Git repository. Let me know if you need any further assistance.
+
+13. Than click the register button and complete registration:
+   Enjoy To-do Application.
 
 ## Contributing
 
