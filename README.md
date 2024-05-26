@@ -1,53 +1,61 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Laravel Multi Auth using Laravel Breeze
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+I can provide you with a guide on how to install a Laravel project from a Git repository. Please follow the instructions below:
 
-## About Laravel
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/your-repository.git
+   ```
+   Change 'username' and 'repository' to the actual values of the repository that you want to clone.
+   
+2. Install Composer:
+   If you don't have composer installed in your system then install composer from here: [https://getcomposer.org](https://getcomposer.org/)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+3. Go to the project directory:
+   ```
+   cd repository
+   ```
+   Now you should see the files and folders of your Laravel project in the terminal.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+4. Install dependencies:
+   ```
+   composer install or composer update
+   ```
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+5. Create a copy of the .env file:
+   ```
+   cp .env.example .env
+   ```
+   This will create a new file named `.env` based on the example file. 
 
-## Learning Laravel
+6. Generate an application key:
+   ```
+   php artisan key:generate
+   ```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+7. Install Node.js dependencies:
+   ```
+   npm install
+   ```
+   This will install all the necessary Node.js libraries, including Tailwind CSS.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+8. Compile assets:
+   ```
+   npm run dev
+   ```
+9. Run migrations:
+   ```
+   php artisan migrate
+   ```
+   This step may fail due to permission issues. If this is the case, you can run `php artisan migrate --pretend` to see the SQL statements that would be executed and manually execute them in your database client.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+10. Start the server:
+   ```
+   php artisan serve
+   ```
+   This will start the development server at http://localhost:8000.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+That's it! You have successfully installed a Laravel project from a Git repository. Let me know if you need any further assistance.
 
 ## Contributing
 
